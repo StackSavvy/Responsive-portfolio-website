@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/img/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active-link">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="/img/close.png" class="res" onclick="closemenu()">
+                </ul>
+                <img src="/img/menu.png" class="res" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I am <span>Nimra Malik </span> <br> from Karachi - Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, libero! Aspernatur consequatur
+                        dolorum, recusandae porro libero ipsum molestiae beatae deserunt quo fuga praesentium amet
+                        voluptate nobis obcaecati animi aliquam aperiam?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Developement</span> <br>Developing Front End of Websites </li>
+                            <li><span>Front End Developement</span> <br>Developing Front End of Websites </li>
+                            <li><span>Front End Developement</span> <br>Developing Front End of Websites </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July 2024 - Current</span> <br>Tour Consultant at Edge Solutions Travel Management
+                                Company </li>
+                            <li><span>Sep 2023 - June 2024</span> <br>Tour Consultant at Target Travel Management
+                                Company </li>
+                            <li><span>Feb 2021 - September 2022</span> <br>Business Development Executive at Levnine
+                                Digital </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Oct 2018 - Sep 2023</span> <br>BS Software Engineering from Virtual University of
+                                Pakistan </li>
+                            <li><span>July 2019 - Oct 2019</span> <br>Web Engineering Course from NED University </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <img src="/img/code.png" alt="">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem delectus harum nobis
+                        dicta eveniet repellendus laboriosam laudantium ipsum dolores.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+                <div>
+                    <img src="/img/code.png" alt="">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem delectus harum nobis
+                        dicta eveniet repellendus laboriosam laudantium ipsum dolores.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+                <div>
+                    <img src="/img/code.png" alt="">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem delectus harum nobis
+                        dicta eveniet repellendus laboriosam laudantium ipsum dolores.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/img/web1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Museum Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eveniet.</p>
+                        <a href="#"><img src="/img/external-link.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/web2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Digital Agency Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eveniet.</p>
+                        <a href="#"><img src="/img/external-link.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/web3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Professional Services Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eveniet.</p>
+                        <a href="#"><img src="/img/external-link.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="#"><img src="/img/send.png" class="contact"></a>nimramalik.dev@gmail.com</p>
+                    <p><a href="#"><img src="/img/telephone.png" class="contact"></a>0328 1274397</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61565249255048" target="_blank"><img
+                                src="/img/facebook.png"></a>
+                        <a href="https://www.instagram.com/_nimmay_/" target="_blank"><img src="/img/instagram.png"></a>
+                        <a href="https://www.linkedin.com/in/nimramalik228" target="_blank"><img
+                                src="/img/linkedin.png"></a>
+                        <a href="https://github.com/StackSavvy" target="_blank"><img src="/img/github.png"></a>
+                    </div>
+                    <a href="/img/Nimra Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nimra Malik</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
